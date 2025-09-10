@@ -11,16 +11,90 @@
     <h1>Projects</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="index.html#projects">Projects</a>
+      <a href="projects.html">Projects</a>
       <a href="index.html#contact">Contact</a>
     </nav>
   </header>
 
   <main>
 
+    <!-- Battery Project -->
+    <section id="battery">
+        <h1>EV Battery Tester</h1>
+
+        <figure>
+            <img src="images/battery_tester.jpg" alt="Final Battery Tester" class="project-image">
+            <figcaption>Final Battery Tester, note: this picture was taken before tester was finished with a front plate. cable terminations, and proper labeling</figcaption>
+        </figure>
+
+        <section>
+        <h2>Overview</h2>
+        <p>
+            A standalone tester that communicates with the battery management system (BMS) to exercise all hardware functions,
+            including charge/discharge along with monitoring cell voltages and temperatures.
+        </p>
+        </section>
+
+        <section>
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Test automation in Python using PyTest</li>
+            <li>Labjack for digital control and analog measurements</li>
+            <li>Raspberry Pi Test Controller</li>
+            <li>Embedded CAN communication with DUT</li>
+            <li>5-channel 2.4 kW discharge load with voltage sensing capability</li>
+        </ul>
+        </section>
+
+        <section>
+        <h2>Features</h2>
+        <ul>
+            <li>Automated charge and discharge testing</li>
+            <li>Reads and validates cell voltages and temperatures along with pack current</li>
+            <li>Validates battery heaters and auxillary voltage output</li>
+            <li>Touchscreen Display</li>
+            <li>Standalone deployment in production environments</li>
+        </ul>
+        </section>
+
+        <section id="battery_tester">
+            <h2>EV Batttery Tester Components</h2>
+            <div class="image-grid">
+
+                <figure>
+                <img src="images/battery_electronics_enclosure.jpg" alt="Electronics Enclosure">
+                <figcaption>Electronics Enclosure with custom stimulus/signal routing PCB</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/battery_ac_control.jpg" alt="AC Control">
+                <figcaption>AC Control Box with Circuit Breaker and Emergency Stop</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/battery_rack.jpg" alt="Tester Rack">
+                <figcaption>Custom Extruded Aluminum Rack</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/battery_resistor_bank.jpg" alt="12kw resistor bank">
+                <figcaption>5-Channel SSR Controlled Discharge Load</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/battery_resistor_bank2.jpg" alt="12kw resistor bank">
+                <figcaption>12 kW Load Resistor Bank</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </section>
+
     <!-- Radar Project -->
     <section id="radar">
         <h1>Radar Antenna Laser Calibration System</h1>
+
+        <img src="images/laser_trimmer.jpg" alt="Radar Antenna Laser Calibration System" class="project-image">
 
         <section>
         <h2>Overview</h2>
@@ -31,43 +105,86 @@
         </section>
 
         <section>
-        <h2>Technologies Used</h2>
+        <h2>Jesse's Responsibilities</h2>
         <ul>
-            <li>C# (automation and control)</li>
-            <li>Altium Designer (circuit design)</li>
-            <li>Pneumatics and laser integration</li>
+            <li>Design overall system including all electrical and pneumatic systems</li>
+            <li>Develop and integrate software application</li>
+            <li>Test and validate functionality and performance</li>
+            <li>Oversee mechanical design and build</li>
+            <li>Ensure OSHA safety requirements are met for high energy systems (Electrical, Pneumatic, Laser)</li>
         </ul>
         </section>
 
         <section>
-        <h2>Features</h2>
+        <h2>Deliverables</h2>
         <ul>
-            <li>Automated calibration of radar antenna resonance</li>
-            <li>Integrated safety interlocks for electrical, pneumatic, and laser systems</li>
-            <li>Production-ready documentation and certification</li>
+            <li>Complete functional system installed in manufacturing plant</li>
+            <li>Machine Operating Instructions</li>
+            <li>Detailed Test Descriptions</li>
+            <li>Complete System Wiring and Plumbing lists</li>
+            <li>Complete Bill of Materials</li>
+            <li>Functional and Performance Certification documentation</li>
         </ul>
         </section>
 
-        <section>
-        <h2>Screenshots</h2>
-        <img src="images/radar1.jpg" alt="Radar Calibration System" style="max-width:100%;border:1px solid #ccc;margin-bottom:1rem;">
-        <img src="images/radar2.jpg" alt="Radar Calibration System detail" style="max-width:100%;border:1px solid #ccc;">
+        <section id="system-gallery">
+            <h2>System Features</h2>
+            <div class="image-grid">
+
+                <figure>
+                <img src="images/radar1.png" alt="RF Isolated Chamber">
+                <figcaption>RF Isolated chamber with Keysight Spectrum analyzer measuring radar frequency</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/radar2.png" alt="Green Laser System">
+                <figcaption>Green Laser system to make cut through copper PCB trace</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/radar3.png" alt="Pneumatic Lift">
+                <figcaption>Pneumatic lift system to close and open RF Isolated Chamber</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/radar4.png" alt="Software Integration">
+                <figcaption>All systems integrated and controlled with custom Windows application built in .NET Framework</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/radar5.png" alt="Machine Vision">
+                <figcaption>Machine vision to locate exact position of PCB Trace</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/radar6.png" alt="Cooling and Fume Extraction">
+                <figcaption>Temperature controlled cooling and fume extraction systems</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/radar7.png" alt="Safety Interlocks">
+                <figcaption>Door lock and panel interlock safety system to prevent unsafe pneumatic and laser operation</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/radar8.png" alt="Internal Cameras">
+                <figcaption>Internal Cameras for mechanical system monitoring</figcaption>
+                </figure>
+
+            </div>
         </section>
 
-        <section>
-        <h2>Links</h2>
-        <p>
-            🔗 <a href="https://github.com/yourusername/radar-project" target="_blank">View Code on GitHub</a>
-        </p>
-        </section>
     </section>
 
     <hr>
 
+    
     <!-- Cartridge Project -->
     <section id="cartridge">
         <h1>Explosive Cartridge Sensitivity Tester</h1>
-
+            
+        <img src="images/sensitivity_tester.jpg" alt="Explosive Cartridge Sensitivity Tester" class="project-image">
+                
         <section>
         <h2>Overview</h2>
         <p>
@@ -77,11 +194,16 @@
         </section>
 
         <section>
-        <h2>Technologies Used</h2>
+        <h2>Jesse's Responsibilities</h2>
         <ul>
-            <li>Custom power controller PCB (Altium Designer)</li>
-            <li>C# (power control software & UI)</li>
-            <li>Data acquisition systems</li>
+            <li>Design overall system including all electrical and software systems</li>
+            <li>Design and build power controller PCB</li>
+            <li>Build electrical system and troubleshoot</li>
+            <li>Develop and integrate power controller software</li>
+            <li>Develop user interface and interface with power controllers and data acquisition cards</li>
+            <li>Test and validate functionality and performance</li>
+            <li>Oversee mechanical design and build</li>
+            <li>Manage and document electrical and software system designs</li>
         </ul>
         </section>
 
@@ -94,65 +216,125 @@
         </ul>
         </section>
 
-        <section>
-        <h2>Screenshots</h2>
-        <img src="images/cartridge1.jpg" alt="Cartridge Tester System" style="max-width:100%;border:1px solid #ccc;margin-bottom:1rem;">
-        <img src="images/cartridge2.jpg" alt="Cartridge Tester detail" style="max-width:100%;border:1px solid #ccc;">
+        <section id="cartridge-system">
+            <h2>Explosive Cartridge Sensitivity Tester Components</h2>
+            <div class="image-grid">
+
+                <figure>
+                <img src="images/cartridge2.png" alt="Custom Power Controller PCB">
+                <figcaption>Custom Designed Power Controller PCB</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/cartridge3.png" alt="Custom Controller Protocol">
+                <figcaption>Custom controller communication protocol</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/cartridge4.png" alt="External Data Acquisition">
+                <figcaption>External data acquisition</figcaption>
+                </figure>
+
+                <figure>
+                <img src="images/cartridge5.png" alt="Pneumatic Test Pin System">
+                <figcaption>Pneumatic test pin engagement system</figcaption>
+                </figure>
+
+            </div>
         </section>
 
-        <section>
-        <h2>Links</h2>
-        <p>
-            🔗 <a href="https://github.com/yourusername/cartridge-project" target="_blank">View Code on GitHub</a>
-        </p>
-        </section>
     </section>
 
     <hr>
 
-    <!-- Battery Project -->
-    <section id="battery">
-        <h1>Final 31kWh Battery Tester</h1>
 
-        <section>
-        <h2>Overview</h2>
-        <p>
-            A standalone tester that communicates with the battery management system (BMS) to exercise all hardware functions,
-            including charge/discharge cycles and monitoring of cell voltages and temperatures.
-        </p>
+    <!-- AutoFinal Projects -->
+    <section id="autofinal">
+        <h1>AutoFinal Test Projects</h1>
+
+        <section id="two-grid">
+            <div class="two-grid">
+                <figure>
+                <img src="images/autofinal1.png" alt="AutoFinal Rack">
+                <figcaption>AutoFinal Rack</figcaption>
+                </figure>
+                <figure>
+                <img src="images/autofinal2.png" alt="AutoFinal Testhead">
+                <figcaption>Interchangable Test Head</figcaption>
+                </figure>
+            </div>
         </section>
 
+
+
         <section>
-        <h2>Technologies Used</h2>
+        <h2>Jesse's Responsibilities</h2>
         <ul>
-            <li>C# (tester control & UI)</li>
-            <li>Embedded communication with BMS</li>
-            <li>Custom hardware interfaces for charge/discharge</li>
+            <li>Support and manage all Auto-Final test systems in use in manufacturing (27 racks and 50+ test heads)</li>
+            <li>Design and integrate new test heads for new products</li>
+            <li>Mentor and oversee all new test head designs by junior engineers</li>
+            <li>Manage and upgrade custom base software in C# .NET framework</li>
         </ul>
         </section>
 
-        <section>
-        <h2>Features</h2>
-        <ul>
-            <li>Automated charge and discharge testing</li>
-            <li>Reads and validates cell voltages and temperatures</li>
-            <li>Standalone deployment in production environments</li>
-        </ul>
-        </section>
+        <section id="tester-gallery">
+            <h2>Example AutoFinal Testers designed and integrated by Jesse</h2>
 
-        <section>
-        <h2>Screenshots</h2>
-        <img src="images/battery1.jpg" alt="Battery Tester" style="max-width:100%;border:1px solid #ccc;margin-bottom:1rem;">
-        <img src="images/battery2.jpg" alt="Battery Tester detail" style="max-width:100%;border:1px solid #ccc;">
-        </section>
+            <div class="gallery-grid">
 
-        <section>
-        <h2>Links</h2>
-        <p>
-            🔗 <a href="https://github.com/yourusername/battery-project" target="_blank">View Code on GitHub</a>
-        </p>
-        </section>
+                <!-- Card 1 -->
+                <article class="card">
+                <div class="thumbs">
+                    <img src="images/autofinal4.png" alt="7-inch panel tester top view">
+                    <img src="images/autofinal5.png" alt="7-inch panel tester inside">
+                </div>
+                <h3 class="card-title">7" Advanced Security Panel</h3>
+                <ul class="card-points">
+                    <li>Cognex machine vision to test LCD, backlight, and logo verification</li>
+                    <li>Pneumatic finger for touchscreen verification</li>
+                    <li>Stepper X-Y slide for camera + pneumatic finger</li>
+                    <li>Ethernet & PSTN tests; audio (speaker/mic/piezo)</li>
+                    <li>Robust communication with DUT + system log for remote debug</li>
+                </ul>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                <div class="thumbs">
+                    <img src="images/autofinal6.png" alt="Keypad tester top view">
+                    <img src="images/autofinal7.png" alt="Keypad tester inside">
+                </div>
+                <h3 class="card-title">Security Keypad</h3>
+                <ul class="card-points">
+                    <li>Icon detection with Cognex (tolerant of manufacturing variation)</li>
+                    <li>Individual pneumatic button actuation</li>
+                    <li>Speaker, microphone, piezo verification</li>
+                    <li>Ethernet & Wi-Fi verification</li>
+                    <li>Wireless sensor receiver tests</li>
+                </ul>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                <div class="thumbs">
+                    <img src="images/autofinal8.png" alt="4.3-inch panel camera fixture">
+                    <img src="images/autofinal9.png" alt="4.3-inch panel wiring">
+                </div>
+                <h3 class="card-title">4.3" Security Panel</h3>
+                <ul class="card-points">
+                    <li>First department tester for high-res color LCD + touch</li>
+                    <li>First AutoFinal in C#/.NET (prior testers in VB6)</li>
+                    <li>Fixed-location pneumatic screen press</li>
+                    <li>Cognex vision for LCD/backlight verification</li>
+                    <li>Improved PSTN + audio tests</li>
+                </ul>
+                </article>
+
+            </div>
+            </section>
+
     </section>
+
 
     </main>
 
