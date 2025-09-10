@@ -185,3 +185,66 @@ footer {
   line-height: 1.35;
 }
 .card-points li + li { margin-top: .35rem; }
+
+/* ---- Skills Section ---- */
+#skills {
+  margin-top: 2rem;
+}
+
+#skills h2 {
+  margin-bottom: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.skill-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.skill-card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.pill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.pill-list li {
+  background: #f3f4f6;           /* light gray */
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;           /* pill shape */
+  padding: .35rem .65rem;
+  font-size: .9rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* Optional: subtle hover */
+.pill-list li:hover {
+  background: #eef2ff;            /* very light indigo */
+  border-color: #c7d2fe;
+}
+
+/* Dark-mode friendly tweak (optional) */
+@media (prefers-color-scheme: dark) {
+  .skill-card { background: #1f2937; border-color: #374151; }
+  .skill-card h3 { color: #f9fafb; }
+  .pill-list li { background: #374151; border-color: #4b5563; color: #e5e7eb; }
+  .pill-list li:hover { background: #334155; border-color: #475569; }
+}
+
